@@ -1,12 +1,13 @@
 package com.abhinandan.lokalproducts
 
-import CustomAdapterOfImages
+import com.abhinandan.lokalproducts.adapters.CustomAdapterOfImages
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.abhinandan.lokalproducts.models.productModel
 
 class DetailedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

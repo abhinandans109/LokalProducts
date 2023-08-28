@@ -1,14 +1,13 @@
+package com.abhinandan.lokalproducts.adapters
+
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.abhinandan.lokalproducts.DetailedActivity
 import com.abhinandan.lokalproducts.ImageViewerActivity
 import com.abhinandan.lokalproducts.R
-import com.abhinandan.lokalproducts.productModel
 import com.squareup.picasso.Picasso
 
 class CustomAdapterOfImages(private val mList: List<String>) : RecyclerView.Adapter<CustomAdapterOfImages.ViewHolder>() {

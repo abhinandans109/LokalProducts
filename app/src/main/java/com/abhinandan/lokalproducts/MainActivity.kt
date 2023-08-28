@@ -1,6 +1,6 @@
 package com.abhinandan.lokalproducts
 
-import CustomAdapter
+import com.abhinandan.lokalproducts.adapters.CustomAdapter
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -8,6 +8,8 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.abhinandan.lokalproducts.models.RetrofitBuilder
+import com.abhinandan.lokalproducts.models.productModel
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

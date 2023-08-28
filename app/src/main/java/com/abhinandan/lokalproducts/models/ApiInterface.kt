@@ -1,5 +1,6 @@
-package com.abhinandan.lokalproducts
+package com.abhinandan.lokalproducts.models
 
+import com.abhinandan.lokalproducts.models.ResponseModel
 import retrofit2.Response
 import retrofit2.http.GET
 

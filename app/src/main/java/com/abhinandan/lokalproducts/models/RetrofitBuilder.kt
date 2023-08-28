@@ -1,4 +1,4 @@
-package com.abhinandan.lokalproducts
+package com.abhinandan.lokalproducts.models
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

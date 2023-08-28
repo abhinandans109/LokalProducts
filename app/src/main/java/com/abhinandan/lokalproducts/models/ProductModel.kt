@@ -1,4 +1,4 @@
-package com.abhinandan.lokalproducts
+package com.abhinandan.lokalproducts.models
 
 import java.io.Serializable
 

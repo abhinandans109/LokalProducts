@@ -1,3 +1,5 @@
+package com.abhinandan.lokalproducts.adapters
+
 import android.content.Intent
 import android.content.Intent.*
 import android.view.LayoutInflater
@@ -8,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.abhinandan.lokalproducts.DetailedActivity
 import com.abhinandan.lokalproducts.R
-import com.abhinandan.lokalproducts.productModel
+import com.abhinandan.lokalproducts.models.productModel
 import com.squareup.picasso.Picasso
 
 class CustomAdapter(private val mList: List<productModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
