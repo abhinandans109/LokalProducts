@@ -2,11 +2,10 @@ package com.abhinandan.lokalproducts.models
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
 
-object RetrofitBuilder {
-    private lateinit var instance: RetrofitBuilder
+class RetrofitBuilder @Inject constructor(){
     var baseUrl="https://dummyjson.com/"
-
     fun getInstance(): ApiInterface {
             return Retrofit.Builder()
                 .baseUrl(baseUrl)

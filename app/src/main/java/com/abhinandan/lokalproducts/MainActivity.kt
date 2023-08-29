@@ -8,6 +8,7 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.abhinandan.DaggerRetrofitBuilderInterface
 import com.abhinandan.lokalproducts.models.RetrofitBuilder
 import com.abhinandan.lokalproducts.models.productModel
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -25,7 +26,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         pb=findViewById(R.id.pb)
         GlobalScope.launch {
-             val response = RetrofitBuilder.getInstance().getProducts()
+            val daggerRetrofitBuilderInterface = DaggerRetrofitBuilderInterface.builder().build().getRetrofitInstance().getInstance()
+             val response = daggerRetrofitBuilderInterface.getProducts()
              if(response.isSuccessful){
                if(response.body()!=null){
                    data= response.body()!!.products
